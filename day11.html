@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: sticky;
+            top: 0px;
+            background-color: #f4f6f8;
+        }
+        a{
+            margin: 0px 10px 0px 10px;
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        select{
+            border: none;
+            outline: none;
+            font-size: 15px;
+            width: 62px;
+            background-color: #f4f6f8;
+    }
+    h1{
+        color: #08c308;
+        font-family: Arial;
+        margin-left: 50px;
+    }
+    input{
+        padding: 15px 25px;
+        border-radius: 30px 0px 0px 30px;
+        border: 1px solid orange;
+        border-right: none;
+        width: 75%;
+    }
+    #button-btn{
+        padding: 15px 20px;
+        border-radius: 20px;
+        border: 1px solid orange;
+        margin-left: -15px;
+        background-color: #08c308;
+        color: white;
+    }
+    button{
+        padding: 5px 20px;
+        border-radius: 20px;
+        border: 1px solid orange;
+        background-color:white;
+        color: #08c308;
+    }
+    img{
+        height: 300px;
+    }
+    .h2{
+        font-size: 50px;
+        color: #08c308;
+        font-weight: bolder;
+        font-family: Arial;
+    }
+    .p{
+        font-size: 30px;
+        color:orange;
+        font-family: Arial;
+        font-weight: bold;
+    }
+    .default{
+        display: flex;
+        justify-content: space-between;
+        padding: 80px;
+        background-image: url('https://demo.htmlcodex.com/2824/Fruitables/img/hero-img.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    i{
+        margin: 4px 0px 0px 4px;
+    }
+    .card{
+        border: 1px solid orange;
+        width: 20%;
+        height: 365px;
+        text-align: center;
+        margin: 10px;
+        border-radius: 5px;
+    }
+    .card-container{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    #triangle-down {
+      width: 0;
+      height: 0;
+      border-left: 22px solid transparent;
+      border-right: 30px solid transparent;
+      border-top: 45px solid orange;
+      margin-top: -25px;
+      margin-left: 75px;
+    }
+   .box{
+    display: flex;
+    width: 22%;
+    background-color: #f4f6f8;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 24px;
+    justify-content: center;
+   }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <div>
+            <h1>Fruitables</h1>
+        </div>
+        <div style="align-self: center;">
+            <a>Home</a>
+            <a>Shop</a>
+            <a>Shop Detail</a>
+            <select>
+                <option>Pages</option>
+                <option>Cart</option>
+                <option>Checkout</option>
+                <option>Testimonial</option>
+                <option>404 Page</option>
+            </select>
+            <a>Contact</a>
+        </div>
+        <div style="align-self: center;margin-right: 60px;">
+            <span style="border: 2px solid orange;padding: 5px;border-radius: 50%;"><i class="fa-brands fa-sistrix"></i></span>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span style="color: rgb(118, 180, 25);"><i class="fa-solid fa-user"></i></span>
+        </div>
+    </header>
+    <main class="default">
+        <div style="align-self: center; margin-left: 100px;">
+            <p class="p">100% Organic Foods</p>
+            <h2 class="h2">Organic viggies & <br>Fruits Foods</h2>
+            <input type="search" placeholder="Scarch"/><button id="button-btn">Submit Now</button>
+        </div>
+        <div style="align-self: center;background-color: orange;border-radius: 15px;">
+            <img src="https://demo.htmlcodex.com/2824/Fruitables/img/hero-img-1.png"/>
+        </div>
+    </main>
+    <main1 style="display: flex;margin-top: 80px;margin-left: 60px;">
+        <div style="width: 15%;padding:50px;margin: 10px;background-color: #f4f6f8;border-radius: 10px;">
+        <div style="display: flex;justify-content: center;align-items: center;  background-color: orange; width: 100px;height: 100px;border-radius: 50%; margin-left: 50px;">
+            <i style="font-size: xx-large;color: white;" class="fa-solid fa-car-side"></i>
+        </div>
+        <div id="triangle-down"></div>
+        <p style="color: #45595b;text-align: center">Free Shipping</p>
+        <p style="color: #45595b;text-align: center">Free On Order $300</p>
+    </div>
+        <div style="width: 15%;padding:50px;margin: 10px;background-color: #f4f6f8;border-radius: 10px;">
+        <div style="display: flex;justify-content: center;align-items: center;  background-color: orange; width: 100px;height: 100px;border-radius: 50%; margin-left: 50px;">
+            <i style="font-size: xx-large;color: white;" class="fa-solid fa-user-shield"></i>
+        </div>
+        <div id="triangle-down"></div>
+        <p style="color: #45595b;text-align: center;">Free Shipping</p>
+        <p style="color: #45595b;text-align: center;">Free On Order $300</p>
+    </div>
+        <div style="width: 15%;padding:50px;margin: 10px;background-color: #f4f6f8;border-radius: 10px;">
+        <div style="display: flex;justify-content: center;align-items: center;  background-color: orange; width: 100px;height: 100px;border-radius: 50%; margin-left: 50px;">
+            <i style="font-size: xx-large;color: white;" class="fa-solid fa-arrow-right-arrow-left"></i>
+        </div>
+        <div id="triangle-down"></div>
+        <p style="color: #45595b;text-align: center">Free Shipping</p>
+        <p style="color: #45595b;text-align: center">Free On Order $300</p>
+    </div>
+        <div style="width: 15%;padding:50px;margin: 10px;background-color: #f4f6f8;border-radius: 10px;">
+        <div style="display: flex;justify-content: center;align-items: center;  background-color: orange; width: 100px;height: 100px;border-radius: 50%; margin-left: 50px;">
+            <i style="font-size: xx-large;color: white;" class="fa-solid fa-phone"></i>
+        </div>
+        <div id="triangle-down"></div>
+        <p style="color: #45595b;text-align: center">Free Shipping</p>
+        <p style="color: #45595b;text-align: center">Free On Order $300</p>
+    </div>
+    </main1>
+    <h2 style="margin-top: 50px;font-family: Arial;margin-left: 80px;font-size: 30px;">Our Organic Products</h2>
+    <main2 class="card-container">
+        <div class="card">
+            <img style="height: 200px;width: 100%;border-top-left-radius: 5px;border-top-right-radius: 5px;" src="https://demo.htmlcodex.com/2824/Fruitables/img/fruite-item-5.jpg"/>
+            <h2>Grapes</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, assumenda iste</p>
+            <span>$4.99 kg</span>
+            <button> <i class="fa-solid fa-bag-shopping"></i>   Add To Cart</button>
+        </div>
+        <div class="card">
+            <img style="height: 200px;width: 100%;border-top-left-radius: 5px;border-top-right-radius: 5px;" src="https://demo.htmlcodex.com/2824/Fruitables/img/fruite-item-2.jpg"/>
+            <h2>Grapes</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, assumenda iste</p>
+            <span>$4.99 kg</span>
+            <button> <i class="fa-solid fa-bag-shopping"></i>   Add To Cart</button>
+        </div>
+        <div class="card">
+            <img style="height: 200px;width:100%;border-top-left-radius: 5px;border-top-right-radius: 5px;" src="https://demo.htmlcodex.com/2824/Fruitables/img/fruite-item-4.jpg"/>
+            <h2>Grapes</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, assumenda iste</p>
+            <span>$4.99 kg</span>
+            <button> <i class="fa-solid fa-bag-shopping"></i>   Add To Cart</button>
+        </div>
+        <div class="card">
+            <img style="height: 200px;width:100%;border-top-left-radius: 5px;border-top-right-radius: 5px;" src="https://demo.htmlcodex.com/2824/Fruitables/img/fruite-item-3.jpg"/>
+            <h2>Grapes</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, assumenda iste</p>
+            <span>$4.99 kg</span>
+            <button> <i class="fa-solid fa-bag-shopping"></i>   Add To Cart</button>
+        </div>
+        <div class="card">
+            <img style="height: 200px;width:100%;border-top-left-radius: 5px;border-top-right-radius: 5px;" src="https://demo.htmlcodex.com/2824/Fruitables/img/fruite-item-1.jpg"/>
+            <h2>Grapes</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, assumenda iste</p>
+            <span>$4.99 kg</span>
+            <button> <i class="fa-solid fa-bag-shopping"></i>   Add To Cart</button>
+        </div>
+        <div class="card">
+            <img style="height: 200px;width:100%;border-top-left-radius: 5px;border-top-right-radius: 5px;" src="https://demo.htmlcodex.com/2824/Fruitables/img/fruite-item-6.jpg"/>
+            <h2>Grapes</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, assumenda iste</p>
+            <span>$4.99 kg</span>
+            <button> <i class="fa-solid fa-bag-shopping"></i>   Add To Cart</button>
+        </div>
+        <div class="card">
+            <img style="height: 200px;width:100%;border-top-left-radius: 5px;border-top-right-radius: 5px;" src="https://demo.htmlcodex.com/2824/Fruitables/img/featur-2.jpg"/>
+            <h2>Grapes</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, assumenda iste</p>
+            <span>$4.99 kg</span>
+            <button> <i class="fa-solid fa-bag-shopping"></i>   Add To Cart</button>
+        </div>
+        <div class="card">
+            <img style="height: 200px;width:100%;border-top-left-radius: 5px;border-top-right-radius: 5px;" src="https://demo.htmlcodex.com/2824/Fruitables/img/featur-3.jpg"/>
+            <h2>Grapes</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, assumenda iste</p>
+            <span>$4.99 kg</span>
+            <button> <i class="fa-solid fa-bag-shopping"></i>   Add To Cart</button>
+        </div>
+    </main2>
+    <main3 style="display: flex;margin-top: 80px;justify-content: center;">
+        <div style="margin:10px;border: 1px solid orange;width: 25%;border-radius: 10px;padding-top: 8px;text-align: center;">
+            <img style="width: 90%;" src="https://demo.htmlcodex.com/2824/Fruitables/img/featur-1.jpg"/>
+            <div style="background-color: #81c408;width: 200px;height: 80px; border-radius: 5px;text-align: center;padding-top: 5px;padding-bottom: 15px;position: relative;top:40px;left: 70px;">
+            <p style="color: white;font-family:20px Raleway-sans-serif;">Fresh Apples</p>
+            <h2 style="color: #45595b;font-family: Arial, Helvetica, sans-serif;">20% OFF</h2>
+        </div>
+            <div style="background-color: orange;width: 100%;height: 100px;border-radius:0px 0px 8px 8px;"></div>
+        </div>
+        <div style="margin:10px;border: 1px solid orange;width: 25%;border-radius: 10px;padding-top: 8px;text-align: center;">
+            <img style="width: 90%;" src="https://demo.htmlcodex.com/2824/Fruitables/img/featur-2.jpg"/>
+            <div style="background-color: #f4f6f8;width: 200px;height: 80px; border-radius: 5px;text-align: center;padding-top: 5px;padding-bottom: 15px;position: relative;top:40px;left: 70px;">
+            <p style="color: #81c408;font-family:20px Raleway-sans-serif;">Tasty Fruits</p>
+            <h2 style="color: #45595b;font-family: Arial, Helvetica, sans-serif;">Free Delivery</h2>
+        </div>
+            <div style="background-color: orange;width: 100%;height: 100px;border-radius:0px 0px 8px 8px;"></div>
+        </div>
+        <div style="margin:10px;border: 1px solid orange;width: 25%;border-radius: 10px;padding-top: 8px;text-align: center;">
+            <img style="width: 90%;" src="https://demo.htmlcodex.com/2824/Fruitables/img/featur-3.jpg"/>
+            <div style="background-color: #ffb524;width: 200px;height: 80px; border-radius: 5px;text-align: center;padding-top: 5px;padding-bottom: 15px;position: relative;top:40px;left: 70px;">
+            <p style="color: white;font-family:20px Raleway-sans-serif;">Exotic Vegetables</p>
+            <h2 style="color: #45595b;font-family: Arial, Helvetica, sans-serif;">Discount 30$</h2>
+        </div>
+            <div style="background-color: orange;width: 100%;height: 100px;border-radius:0px 0px 8px 8px;"></div>
+        </div>
+    </main3>
+    <h2 style="margin-top: 50px;font-family: Arial;margin-left: 80px;font-size: 30px;">Fresh Organic Vegetables</h2>
+    <main4 class="card-container">
+        <div class="card">
+            <img style="height: 200px;width: 100%;border-radius: 5px;" src="https://demo.htmlcodex.com/2824/Fruitables/img/vegetable-item-1.jpg"/>
+            <h2>Grapes</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, assumenda iste</p>
+            <span>$4.99 kg</span>
+            <button> <i class="fa-solid fa-bag-shopping"></i>   Add To Cart</button>
+        </div>
+        <div class="card">
+            <img style="height: 200px;width: 100%;" src="https://demo.htmlcodex.com/2824/Fruitables/img/vegetable-item-6.jpg"/>
+            <h2>Grapes</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, assumenda iste</p>
+            <span>$4.99 kg</span>
+            <button> <i class="fa-solid fa-bag-shopping"></i>   Add To Cart</button>
+        </div>
+        <div class="card">
+            <img style="height: 200px;width:100%" src="https://demo.htmlcodex.com/2824/Fruitables/img/vegetable-item-5.jpg"/>
+            <h2>Grapes</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, assumenda iste</p>
+            <span>$4.99 kg</span>
+            <button> <i class="fa-solid fa-bag-shopping"></i>   Add To Cart</button>
+        </div>
+        <div class="card">
+            <img style="height: 200px;width:100%" src="https://demo.htmlcodex.com/2824/Fruitables/img/fruite-item-3.jpg"/>
+            <h2>Grapes</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, assumenda iste</p>
+            <span>$4.99 kg</span>
+            <button> <i class="fa-solid fa-bag-shopping"></i>   Add To Cart</button>
+        </div>
+    </main4>
+    <main5 style="display: flex;justify-content: space-around;background-color: orange;margin-top: 80px;">
+        <div>
+            <h2 style="font-size: 50px;color: white;">Fresh Exotic Fruits</h2>
+            <p style="font-size: 30px;">in Our Store</p>
+            <p>The generated Lorem Ipsum is therefore always free from repetition injected<br> humour, or non-characteristic words etc.</p>
+            <button style="width: 100px;height: 40px;">Buy</button>
+        </div>
+        <div>
+            <img style="height: 500px;" src="https://demo.htmlcodex.com/2824/Fruitables/img/baner-1.png"/>
+        </div>
+    </main5>
+    <main6 style="text-align: center;">
+        <h2 style="color: #45595b;font-weight: 700;font:Raleway,sans-serif;">Bestseller Products</h2>
+        <p style="color: #747d88;">Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+    </main6>
+<main7 style="display: flex;margin-left: 60px;flex-wrap: wrap;justify-content: center;">
+            <div class="box">
+        <div>
+            <img style="border-radius: 50%;height: 150px;" src="https://demo.htmlcodex.com/2824/Fruitables/img/best-product-1.jpg"/>
+        </div>
+        <div style="margin-left: 20px;">
+            <p>Organic Tomato</p>
+            <p>3012 $</p>
+            <button> <i class="fa-solid fa-bag-shopping"></i>   Add To Cart</button>
+        </div>
+    </div>
+            <div class="box">
+        <div>
+            <img style="border-radius: 50%;height: 150px;" src="https://demo.htmlcodex.com/2824/Fruitables/img/best-product-2.jpg"/>
+        </div>
+        <div style="margin-left: 20px;">
+            <p>Organic Tomato</p>
+            <p>3012 $</p>
+            <button> <i class="fa-solid fa-bag-shopping"></i>   Add To Cart</button>
+        </div>
+    </div>
+            <div class="box">
+        <div>
+            <img style="border-radius: 50%;height: 150px;" src="https://demo.htmlcodex.com/2824/Fruitables/img/best-product-3.jpg"/>
+        </div>
+        <div style="margin-left: 20px;">
+            <p>Organic Tomato</p>
+            <p>3012 $</p>
+            <button> <i class="fa-solid fa-bag-shopping"></i>   Add To Cart</button>
+        </div>
+    </div>
+            <div class="box">
+        <div>
+            <img style="border-radius: 50%;height: 150px;" src="https://demo.htmlcodex.com/2824/Fruitables/img/best-product-4.jpg"/>
+        </div>
+        <div style="margin-left: 20px;">
+            <p>Organic Tomato</p>
+            <p>3012 $</p>
+            <button> <i class="fa-solid fa-bag-shopping"></i>   Add To Cart</button>
+        </div>
+    </div>
+            <div class="box">
+        <div>
+            <img style="border-radius: 50%;height: 150px;" src="https://demo.htmlcodex.com/2824/Fruitables/img/best-product-5.jpg"/>
+        </div>
+        <div style="margin-left: 20px;">
+            <p>Organic Tomato</p>
+            <p>3012 $</p>
+            <button> <i class="fa-solid fa-bag-shopping"></i>   Add To Cart</button>
+        </div>
+    </div>
+            <div class="box">
+        <div>
+            <img style="border-radius: 50%;height: 150px;" src="https://demo.htmlcodex.com/2824/Fruitables/img/best-product-6.jpg"/>
+        </div>
+        <div style="margin-left: 20px;">
+            <p>Organic Tomato</p>
+            <p>3012 $</p>
+            <button> <i class="fa-solid fa-bag-shopping"></i>   Add To Cart</button>
+        </div>
+    </div>
+</main7>
+<div style="display: flex;margin: 60px;justify-content: center;">
+    <div style="width: 15.5%;text-align: center;margin: 20px;">
+    <img style="width: 230px;height: 180px;border-radius: 5px;" src="https://demo.htmlcodex.com/2824/Fruitables/img/fruite-item-1.jpg"/>
+    <p>Organic Tomato</p>
+    <p>3012 $</p>
+    <button> <i class="fa-solid fa-bag-shopping"></i>   Add To Cart</button>
+</div>
+<div style="width: 15.5%;text-align: center;margin: 20px;">
+    <img style="width: 230px;height: 180px;border-radius: 5px;" src="https://demo.htmlcodex.com/2824/Fruitables/img/fruite-item-2.jpg"/>
+    <p>Organic Tomato</p>
+    <p>3012 $</p>
+    <button> <i class="fa-solid fa-bag-shopping"></i>   Add To Cart</button>
+</div>
+<div style="width: 15.5%;text-align: center;margin: 20px;">
+    <img style="width: 230px;height: 180px;border-radius: 5px;" src="https://demo.htmlcodex.com/2824/Fruitables/img/fruite-item-3.jpg"/>
+    <p>Organic Tomato</p>
+    <p>3012 $</p>
+    <button> <i class="fa-solid fa-bag-shopping"></i>   Add To Cart</button>
+</div>
+<div style="width: 15.5%;text-align: center;margin: 20px;">
+    <img style="width: 230px;height: 180px;border-radius: 5px;" src="https://demo.htmlcodex.com/2824/Fruitables/img/fruite-item-4.jpg"/>
+    <p>Organic Tomato</p>
+    <p>3012 $</p>
+    <button> <i class="fa-solid fa-bag-shopping"></i>   Add To Cart</button>
+</div>
+</div>
+<div style="background-color: #f4f6f8;border-radius: 5px;padding: 48px;">
+<div style="display: flex;margin-left: 100px;justify-content: center;">
+    <div style="width: 15%;text-align: center;border-radius: 5px;background-color:darkgray;padding-top: 15px;padding-bottom: 10px;margin: 20px;">
+    <i style="color: orange;font-size: 30px;" class="fa fa-users text-secondary"></i>
+    <h4 style="color: greenyellow;">satisfied <br>customers</h4>
+    <h3 style="color: #45595b;">1963</h3>
+</div>
+<div style="width: 15%;text-align: center;border-radius: 5px;background-color:darkgray;padding-top: 15px;padding-bottom: 10px;margin: 20px;">
+    <i style="color: orange;font-size: 30px;" class="fa fa-users text-secondary"></i>
+    <h4 style="color: greenyellow;">satisfied <br>customers</h4>
+    <h3 style="color: #45595b;">1963</h3>
+</div>
+<div style="width: 15%;text-align: center;border-radius: 5px;background-color:darkgray;padding-top: 15px;padding-bottom: 10px;margin: 20px;">
+    <i style="color: orange;font-size: 30px;" class="fa fa-users text-secondary"></i>
+    <h4 style="color: greenyellow;">satisfied <br>customers</h4>
+    <h3 style="color: #45595b;">1963</h3>
+</div>
+<div style="width: 15%;text-align: center;border-radius: 5px;background-color:darkgray;padding-top: 15px;padding-bottom: 10px;margin: 20px;">
+    <i style="color: orange;font-size: 30px;" class="fa fa-users text-secondary"></i>
+    <h4 style="color: greenyellow;">satisfied <br>customers</h4>
+    <h3 style="color: #45595b;">1963</h3>
+</div>
+</div>
+</div>
+<div style="text-align: center;">
+    <h4 style="color: #81c408;font-size: 20px;">Our Testimonial</h4>
+    <h3 style="font-size: 30px;font-family: Arial, Helvetica, sans-serif;color: #45595b;">Our Client Saying!</h3>
+</div>
+</body>
+</html>
